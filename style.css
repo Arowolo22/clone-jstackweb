@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Global CSS */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+
+header{
+  background-color: #1f4a40;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#menu li a{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+#navbar .logo{
+  width: 120px;
+}
+
+#menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+#w-btn{
+  margin-left: 40px;
+  background: #fff;
+  color: #1f4a40;
+  padding: 9px 30px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+}
+
+#g-btn{
+   text-decoration: none;
+   color: #fff ;
+   background-color: #51a995;
+   padding: 9px 30px;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+#bar{
+  color: #fff;
+  display: none;
+}
+
+/* HERO */
+
+.hero{
+  background-color: #1f4a40;
+}
+
+.hero-box{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+}
+.h-left{
+  width: 45%;
+  color: #fff;
+}
+
+.h-left p{
+  padding: 1.5rem 0 ;
+}
+
+.search{
+  position: relative;
+}
+
+.search a{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.search input{
+  width: 100%;
+  height: 4rem;
+  border-radius: 35px;
+  padding: 0 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.h-right{
+  width: 50%;
+
+}
+
+.h-right img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.features .fe-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.features .fe-box div{
+ width: 200px;
+
+}
+.features .fe-box img{
+  width: 50px;
+  margin-top: 3rem;
+
+}
+
+.jobs .job-id{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-shadow: 2px 2px 15px rgb(0, 0,0,0.1);
+}
+
+.jobs .job-id li{
+  cursor: pointer;
+  padding: 20px 40px;
+  color: #000;
+}
+
+.jobs .job-id li.active{
+  color: #fff;
+  background-color: #51a995;
+}
+.jobs .jList{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-items: start;
+  cursor: pointer;
+  color: #000;
+  padding: 2rem 2rem;
+}
+
+.jobs .jList.delete{
+  display: none;
+
+}
+
+.jobs .jList:hover{
+  background: #ecf1ee;
+}
+
+.jobs .jList img{
+  width: 40px;
+}
+
+.jobs .jList h3{
+  padding-bottom: 0;
+}
+
+.trust .t-box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.trust .t-box img{
+ margin: 1rem 1rem 1rem 0;
+}
+
+.team-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-container .f1-box{
+  border: 1px solid #c1e1d1;
+  width: 280px;
+  padding: 2rem 0;
+  border-radius: 20px;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f1-box img{
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+#key{
+  font-size: 0.8rem;
+  background-color: #edcfee;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.skill{
+  padding-bottom: 3rem;
+}
+
+footer{
+  background: #1f4a40;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top .logo{
+  width: 170px;
+  margin-bottom: 1rem;
+}
+
+.top i{
+  color: #fff;
+  font-size: 2rem;
+  margin-left: .5rem;
+}
+
+.bottom{
+  padding: 2rem;
+  align-items: start;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom a {
+  color: #fff;
+  text-decoration: none;
+ line-height: 35px;
+ font-size: 1.1rem;
+
+}
+
+@media(max-width:1200px){
+  .obj-width{
+    width: 95%;
+  }
+}
+
+@media(max-width:699px){
+  #menu{
+   display: block;
+   width: 280px;
+   height: auto;
+   background-color: #fff;
+   opacity: 0;
+   border-radius: 12px;
+   position: absolute;
+   top: 80px;
+   right: -100%;
+   padding: 30px 0;
+   box-shadow: 0px 2px 10px rgb(0, 0,0,0.2);
+   transition: all 0.3s ease;
+  }
+  #menu.active{
+    right: 10px;
+    opacity: 1;
+  }
+  #menu li{
+    padding: 1rem;
+  }
+  #menu li a{
+    color:#1f4a40;
+   
+  }
+  #bar{
+    display: block;
+    font-size: 1.7rem;
+    cursor: pointer;
+  }
+  #w-btn{
+    margin: 20px 0 0 50px;
+    background: #1f4a40;;
+    color: #fff;
+  }
+  .hero-box{
+      flex-direction: column-reverse;
+      height: auto;
+      justify-content: center;
+      align-items: start;
+      padding: 8rem 0;
+  }
+  .h-left{
+    width: 100%;
+  }
+  .h-right{
+    display: none;
+  }
+  .features .fe-box div{
+    width: 40%;
+   }
+
+   .jobs .job-id{
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    -ms-text-overflow: none;
+    scrollbar-width: none;
+   }
+
+   .jobs .job-id li {
+    padding: 20px 20px;
+    text-wrap: nowrap;
+   }
+
+
+   .jobs-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+   }
+
+   .jobs .jList {
+    width: 48%;
+    margin-top: 1rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-items: center;
+   }
+
+   .team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .top i{
+    margin: 1rem 1rem 0 0 ;
+   }
+
+   .bottom div{
+    width: 50%;
+    margin-bottom: 50px;
+   }
+}
