@@ -9,9 +9,9 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(".")); // Serve static files from current directory
+app.use(express.static(".")); 
 
-// Create a transporter object using SMTP transport
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -20,14 +20,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Route to handle form submission
+
 app.post("/submit-application", async (req, res) => {
   const { firstName, lastName, reason } = req.body;
 
   // Email content
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER, // Send to yourself
+    to: process.env.EMAIL_USER, 
     subject: "New Job Application",
     html: `
             <h2>New Job Application Received</h2>
